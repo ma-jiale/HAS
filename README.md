@@ -1,10 +1,30 @@
-<h1 align="center">HAS: a simple home assistant system</h1>
+<h1 align="center">HAS: A Simple Home Assistant System</h1>
+<div align="center">
+<a href="https://github.com/ma-jiale/HAS/stargazers"><img src="https://img.shields.io/github/stars/ma-jiale/HAS" alt="Stars Badge"/></a>
+<a href="https://github.com/ma-jiale/HAS/network/members"><img src="https://img.shields.io/github/forks/ma-jiale/HAS" alt="Forks Badge"/></a>
+<a href="https://github.com/ma-jiale/HAS/pulls"><img src="https://img.shields.io/github/issues-pr/ma-jiale/HAS" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/ma-jiale/HAS/issues"><img src="https://img.shields.io/github/issues/ma-jiale/HAS" alt="Issues Badge"/></a>
+<a href="https://github.com/ma-jiale/HAS/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ma-jiale/HAS?color=2b9348"></a>
+<a href="https://github.com/ma-jiale/HAS/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ma-jiale/HAS?color=2b9348" alt="License Badge"/></a>
+
+<a href="https://github.com/ma-jiale/HAS/blob/main/enREADME.md"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=English README 英文自述文件&color=%230076D6&style=flat&logo=google-chrome&logoColor=green" alt="website"/></a>
+
+<i>喜欢这个项目吗？请考虑给 Star ⭐️ 以帮助改进！</i>
+
+</div>
+
 
 > 本项目是作者在《交互技术》课程上的一个作业，作业的要求是设计并实现一个可以采集温湿度数据或用来开灯关灯的智能家居用户界面，我将其取名为汉斯（HAS），全程为a simple home assistant system。该项目主要使用Arduino单片机来模拟实际的智能家居控制，使用flask轻量级Web应用框架构建Web服务器（人生苦短，我用Python！），使用Figma原型设计软件设计前端界面，使用 HTML/CSS/JavaScript（”前端三件套“） + Bootstrap框架构建前端网页。因作者能力有限，部分工作通过ChatGPT协作完成，如您发现有任何错误或者优化的点，还请不吝赐教。
 
 ### 更新说明
 
+#### 24.12.7更新
 
+- 新建仓库
+- 添加README.md
+- 添加电路设计
+
+- 添加固件代码
 
 ### 1.项目文件说明
 
