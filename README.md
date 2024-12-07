@@ -10,7 +10,6 @@
 <a href="https://github.com/ma-jiale/HAS/blob/main/enREADME.md"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=English README 英文自述文件&color=%230076D6&style=flat&logo=google-chrome&logoColor=green" alt="website"/></a>
 
 <i>喜欢这个项目吗？请考虑给 Star ⭐️ 以帮助改进！</i>
-
 </div>
 
 
