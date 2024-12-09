@@ -101,7 +101,7 @@ Arduino的入门教程可以参考[太极创客 – Arduino，人工智能，物
 
 #### 3.2 服务器后端代码
 
-后端代码主要使用flask包和pyserial包，编写语言是Python, 存放在[HAS_gui.py](Software/HAS_gui.py)文件中。
+后端代码主要使用flask包和pyserial包，编写语言是Python, 存放在[HAS_gui.py](Software/HAS_gui/HAS_gui.py)文件中。
 
 Flask是一个轻量级的Web框架，用于构建Web应用程序。
 下面是创建一个只有hello Web!的的网站简单程序示例：
@@ -153,7 +153,7 @@ if __name__ == '__main__':
     serial_thread.start()
 ```
 
-服务器后端代码主要实现了从串口读取数据和发送数据，运行一个Web应用程序，并且响应用户的输入和显示串口读到的传感器信息。具体实现细节请看源代码[HAS_gui.py](Software/HAS_gui.py)
+服务器后端代码主要实现了从串口读取数据和发送数据，运行一个Web应用程序，并且响应用户的输入和显示串口读到的传感器信息。具体实现细节请看源代码[HAS_gui.py](Software/HAS_gui/HAS_gui.py)
 
 ### 4.Web设计说明
 
@@ -191,4 +191,4 @@ Figma 是一个基于云的设计工具，主要用于界面设计、原型制�
 
 ### 5.演示视频
 
-网址
+[我做了一个智能家居控制系统原型！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1wAqwYgEq9/?vd_source=bf08880c4c4d8fdcca4d17ed2ee821fe)
