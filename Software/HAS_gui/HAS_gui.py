@@ -59,9 +59,9 @@ def get_sensor_data():
 def toggle_light():
     data = request.json
     if data and data.get('status') == 'l' or data and data.get('status') == 'c' or data and data.get('status') == 'f':
-        print("Light toggled!")
         ser.write(data['status'].encode('utf-8'))
-        return jsonify({"message": "Light toggled successfully!"})
+        print("send messsage to serial")
+        return jsonify({"message": "Toggle successfully!"})
     return jsonify({"error": "Invalid request!"}), 400
 
 
