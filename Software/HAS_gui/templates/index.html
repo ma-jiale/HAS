@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-US">
+
+  <head>
+    <title>HAS</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="Has" style="width: 1440px; height: 1024px; position: relative; background: #F9F9F9">
+    <div class="UpRect" style="width: 1440px; height: 100px; left: 0px; top: 0px; position: absolute; background: #F9F9F9; border-bottom: 1px #D0CFCF solid"></div>
+    <div class="LeftRect" style="width: 120px; height: 924px; left: 0px; top: 100px; position: absolute; background: #F9F9F9; border-top: 1px #D0CFCF solid; border-right: 1px #D0CFCF solid"></div>
+    <div class="Card1" style="width: 425px; height: 820px; left: 960px; top: 138px; position: absolute; background: white; border-radius: 15px; border: 1px #959595 solid"></div>
+    <div style="left: 1337px; top: 35px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">小马</div>
+    <div class="Grid" style="width: 30px; height: 30px; padding: 1.88px; left: 45px; top: 166px; position: absolute; background: #F2AC5C; border-radius: 5px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+        <img src="..\static\images\grid.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="Gear" style="width: 30px; height: 30px; left: 45px; top: 566px; position: absolute">
+        <img src="..\static\images/gear.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="Gear" style="width: 30px; height: 30px; left: 1201px; top: 38px; position: absolute">
+        <img src="..\static\images/gear.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="GeoAlt" style="width: 30px; height: 30px; left: 45px; top: 466px; position: absolute">
+        <img src="..\static\images/geo-alt.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="Lightning" style="width: 30px; height: 30px; padding-left: 4.69px; padding-right: 4.69px; left: 45px; top: 266px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <img src="..\static\images/lightning.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="ShieldLock" style="width: 30px; height: 30px; left: 45px; top: 366px; position: absolute">
+        <img src="..\static\images/shield-lock.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="Bell" style="width: 30px; height: 30px; padding-left: 1.88px; padding-right: 1.88px; left: 1153px; top: 38px; position: absolute; flex-direction: column; justify-content: center; align-items: center; gap: 1.88px; display: inline-flex">
+        <img src="..\static\images/bell.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+    <div class="Addcard" style="width: 150px; height: 150px; left: 739px; top: 501px; position: absolute">
+      <div class="Rectangle18" style="width: 150px; height: 150px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 15px; border: 0.50px #959595 solid"></div>
+      <div class="PlusCircle" style="width: 40px; height: 40px; left: 55px; top: 55px; position: absolute; background: #0751A5; border-radius: 32px; overflow: hidden">
+        <img src="..\static\images/plus-circle.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+      </div>
+    </div>
+    <div class="Dth" style="width: 189px; height: 30px; left: 686px; top: 443px; position: absolute">
+      <div class="ThermometerHalf" style="width: 30px; height: 30px; left: 0px; top: 0px; position: absolute">
+          <img src="..\static\images/thermometer-half.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+      </div>
+      <div class="DropletFill" style="width: 30px; height: 30px; padding-left: 3.75px; padding-right: 3.75px; left: 105px; top: 0px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+          <img src="..\static\images/droplet-fill.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+      </div>
+      <div id="temperature" style="left: 30px; top: 1px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">{{ temperature }} °C</div>
+      <div id="humidity" style="left: 139px; top: 1px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">{{ humidity }} %</div>
+  </div>
+  
+    <div class="WeatherCard" style="width: 733px; height: 250px; left: 169px; top: 152px; position: absolute">
+      <div class="Rectangle3" style="width: 733px; height: 250px; left: 0px; top: 0px; position: absolute; background: #F2AC5C; border-radius: 15px"></div>
+      <div style="width: 147.63px; left: 571.02px; top: 224px; position: absolute; color: white; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">天气数据来源于@彩云天气</div>
+      <div class="GeoAlt" style="width: 12.30px; height: 12px; left: 80.99px; top: 132px; position: absolute">
+        <img src="..\static\images/geo-alt2.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+      <div style="width: 118.92px; left: 27.68px; top: 151px; position: absolute; color: white; font-size: 48px; font-family: Inter; font-weight: 400; word-wrap: break-word">20℃</div>
+      <div style="width: 221.44px; left: 25.63px; top: 24px; position: absolute; color: #0751A5; font-size: 36px; font-family: Inter; font-weight: 600; word-wrap: break-word">你好，小马！</div>
+      <div style="width: 377.26px; left: 29.73px; top: 83px; position: absolute; color: #0751A5; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">早上好！户外空气质量非常好，今天非常适合出行！</div>
+      <div style="width: 43.06px; left: 29.73px; top: 130px; position: absolute; color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">闵行区</div>
+      <div style="width: 28.70px; left: 29.73px; top: 208px; position: absolute; color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">多云</div>
+      <div class="15" style="width: 71.76px; left: 71.76px; top: 208px; position: absolute; color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">25℃/15℃</div>
+    </div>
+    <div class="Logo" style="width: 60px; height: 60px; left: 30px; top: 18px; position: absolute">
+          <img src="..\static\images\logo.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+      </div>
+      
+    <div class="Card2" style="width: 724px; height: 272px; left: 178px; top: 686px; position: absolute; background: white; border-radius: 15px; border: 1px #959595 solid"></div>
+    <img class="Avatar" style="width: 60px; height: 60px; left: 1267px; top: 20px; position: absolute; border-radius: 15px" src="..\static\images\avatar.png" />
+
+
+    <div class="Lightcard" style="width: 150px; height: 150px; left: 187px; top: 501px; position: absolute">
+      <div class="Rectangle15" style="width: 150px; height: 150px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 15px; border: 0.50px #959595 solid"></div>
+      <div style="left: 20px; top: 120px; position: absolute; color: #0751A5; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">卧室灯</div>
+      <div class="ToggleOn" style="width: 30px; height: 30px; padding-top: 5.62px; padding-bottom: 5.62px; left: 106px; top: 11px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <input class="btn btn-primary" type="button" value="开关" onclick="toggle_light()">
+      </div>
+      <div class="Lightbulb01" style="width: 50px; height: 50px; padding-left: 12.50px; padding-right: 12.50px; padding-top: 5px; padding-bottom: 5px; left: 18px; top: 59px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <img src="..\static\images/Lightbulb 01.svg" alt="Logo" style="width: 100%; height: 100%;" />
+      </div>
+    </div>
+
+  <div class="CurtainCard" style="width: 150px; height: 150px; left: 371px; top: 501px; position: absolute">
+    <div class="Rectangle20" style="width: 150px; height: 150px; left: 0px; top: 0px; position: absolute; background: #F2AC5C; border-radius: 15px; border: 0.50px #959595 solid"></div>
+    <div style="left: 20px; top: 120px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">电动窗帘</div>
+    <div class="ToggleOn" style="width: 30px; height: 30px; padding-top: 5.62px; padding-bottom: 5.62px; left: 106px; top: 11px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <input class="btn btn-primary" type="button" value="开关" onclick="toggle_curtain()">
+    </div>
+    <div class="Kanban" style="width: 40px; height: 40px; left: 23px; top: 64px; position: absolute">
+        <img src="..\static\images/kanban.svg" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+  </div>
+
+  <div class="Fancard" style="width: 150px; height: 150px; left: 555px; top: 501px; position: absolute">
+    <div class="Rectangle21" style="width: 150px; height: 150px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 15px; border: 0.50px #959595 solid"></div>
+    <div style="left: 20px; top: 120px; position: absolute; color: #0751A5; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">风扇</div>
+    <div class="ToggleOn" style="width: 30px; height: 30px; padding-top: 5.62px; padding-bottom: 5.62px; left: 106px; top: 11px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <input class="btn btn-primary" type="button" value="开关" onclick="toggle_fan()">
+    </div>
+    <div class="Flower2" style="width: 40px; height: 40px; left: 23px; top: 64px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+        <img src="..\static\images/flower2.png" alt="Logo" style="width: 100%; height: 100%;"/>
+    </div>
+  </div>
+
+  <div class="dropdown" style="width: 157px; height: 45px; left: 166px; top: 437px; position: absolute">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      卧室
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">客厅</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+
+  <nav class="navbar bg-body-tertiary" style="width: 550px; height: 60px; left: 219px; top: 20px; position: absolute">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <script src="..\static\scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
